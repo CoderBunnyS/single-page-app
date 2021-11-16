@@ -23,12 +23,11 @@ const Navbar = {
       <a id="expenses-link" href="#expenses">Expenses</a>
     </li>
     <li class="spacer" />
-//     <li id="log-out" style="display: ${isAuthenticated ? "block" : "none"}">
-//       <a href="#"> Logout</a>
-//     </li>
-//     <li id="log-in" style="display: ${isAuthenticated ? "none" : "block"}">
-//       <a href="#"> Login</a>
-    const isAuthenticated = await window.auth0Client.isAuthenticated();
+     <li id="log-out" style="display: ${isAuthenticated ? "block" : "none"}">
+       <a href="#"> Logout</a>
+     </li>
+     <li id="log-in" style="display: ${isAuthenticated ? "none" : "block"}">
+       <a href="#"> Login</a>
     </li>
     <li class="profile">
       <img src="${window.user.picture}" />
